@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tick-Home</title>
+  <link rel="stylesheet" href="/HMTL/TickHome.css">
+  <script type="text/javascript" src="/HMTL/TickHome.js"></script>
+</head>
+
+<body>
+    <h1>NylEstudos&BusinessTerm</h1>
+    <p id="task-instruction">Não sabe onde organizar as tarefas? Adicione-as aqui.</p>
+
+    <div class="container">
+        <form>
+            <label for="task-name">Nome da Atividade</label>
+            <input type="text" id="task-name" placeholder="Digite o nome da atividade...">
+            
+            <label for="Local">Local da Atividade</label>
+            <input type="text" id="Local" placeholder="Digite o local da atividade...">
+
+            <label for="task-date">Data da Atividade</label>
+            <input type="date" id="task-date">
+
+            <label for="start-time">Hora de Início</label>
+            <input type="time" id="start-time" name="start-time">
+
+            <label for="end-time">Hora de Término</label>
+            <input type="time" id="end-time" name="end-time">
+
+            <label for="task-priority">Nível de prioridade da atividade</label>
+            <select id="task-priority">
+                <option value="alto">Alto</option>
+                <option value="medio">Médio</option>
+                <option value="baixo">Baixo</option>
+            </select>
+
+            <label for="Notas">Descrição da Atividade</label>
+            <textarea id="Notas" name="notas" rows="4" cols="50" placeholder="Digite a descrição da atividade..."></textarea>
+
+            <button id="add-task-btn" onclick="addTask()">Agendar</button>
+        </form>
+    </div>
+
+    <ul id="task-list"></ul>
+
+    <button onclick="markAllCompleted()">Marcar Todas como Realizadas</button>
+
+    
+</body>
+
+</html>
